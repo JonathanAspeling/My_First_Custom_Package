@@ -1,11 +1,7 @@
-from mypackage import myFunction
-
-def test_top_n():
-    """
-    make sure top_n works correctly
-    """
-
-    assert myFunction.top_n([8, 3, 2, 7, 4], 3) == [8, 7, 4], 'incorrect'
-    assert myFunction.top_n([10, 1, 12, 9, 2], 2) == [12, 10], 'incorrect'
-    assert myFunction.top_n([1, 2, 3, 4, 5], 5) == [5, 4, 3, 2, 1], 'incorrect'
-    
+from mypackage import recursion
+def test_sum_array():
+        ''' 
+        Ensures that sum_array with recursion works.
+        '''
+        assert recursion.sum_array([5,4,3,2,1])==15,'incorrect'
+        assert recursion.sum_array([10,100,1000,10000])==111101,'incorrect'
