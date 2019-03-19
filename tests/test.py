@@ -1,4 +1,5 @@
 from mypackage import recursion
+from mypackage import sorting
 def test_sum_array():
         ''' 
         Ensures that sum_array with recursion works.
@@ -26,9 +27,28 @@ def test_factorial():
 
 def test_reverse():
 
-    '''
-    Ensures that reverse function works with recursion works.
-    '''
-    assert recursion.reverse('Apple')=='elppA','incorrect'
-    assert recursion.reverse('Doom')=='mooD','incorrect'
-    assert recursion.reverse('Algea')=='aeglA','incorrect'
+        '''
+        Ensures that reverse function works with recursion works.
+        '''
+        assert recursion.reverse('Apple')=='elppA','incorrect'
+        assert recursion.reverse('Doom')=='mooD','incorrect'
+        assert recursion.reverse('Algea')=='aeglA','incorrect'
+
+def test_bubble_sort():
+        '''
+        Ensures that buble_sort function works.
+        '''
+
+        assert sorting.bubble_sort([5,4,3,2,1])==[1,2,3,4,5],'incorrect'
+
+def test_merge_sort():
+        '''
+        Ensures that merge_sort function works.
+        '''
+        assert sorting.merge_sort([5,4,3,2,1])==[1,2,3,4,5],'incorrect'
+
+def test_quick_sort():
+        '''
+        Ensures that quick_sort function works.
+        '''
+        assert sorting.quick_sort([5,4,3,2,1])==[1,2,3,4,5],'incorrect'
