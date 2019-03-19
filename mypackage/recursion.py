@@ -2,8 +2,7 @@ def sum_array(array):
 
     '''Return sum of all integer items in array'''
 
-    #Recursive sum, slices the array passed in from user n amount of times until only only one 
-    #Element is left. Algorythm isolates each element of the array and sums it back together.
+
     if len(array) ==1:
         return array[0]
     else:
@@ -13,16 +12,22 @@ def sum_array(array):
 def fibonacci(n):
 
     '''Return nth term in fibonacci sequence'''
-    if n==1 or n==2:
+
+
+    if n==0:
+        return 0
+    elif n==1 or n==2:
         return 1
     return fibonacci(n-1) + fibonacci(n-2)
 
-        
+
 
 def factorial(n):
 
     '''Return n!'''
-    if n == 1:
+
+    
+    if n <= 1:
         return 1
     else:
         return n*factorial(n-1)
